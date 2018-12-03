@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html{
+    font-size: 16px;
+    font-family: 'Ubuntu'
+}
+.sing-in{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:.8em 2em 0 0; 
+    display: none
+}
+.forgot-user{
+    margin-right: 1em;
+    font-size: .8em;
+    color: rgb(104, 104, 104)
+}
+.forgot-user a{
+    text-decoration: none;
+    color: rgb(41, 125, 236)
+}
+
+.forgot-user a:visited{color: rgb(41, 125, 236)}
+
+.btn-singin a button{
+    width:8em;
+    padding: .8em;
+    color:white;
+    background:  rgb(41, 125, 236);
+    border:1px solid #002bb9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #002bb9;
+    font-family: 'Ubuntu';
+}
+.container{
+    width: 400px;
+    min-width: 50%;
+    margin:  auto;
+}
+.header-form{
+    margin:0 auto;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container-btns{
+    display: flex;
+    justify-content: center;
+    margin:1.5em 0; 
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right:.5em;
+    text-align: center
+}
+.container-btn-img{
+    width: 1.5em;
+    margin-right: .3em
+}
+.container-btn-img a img{
+    width: 100%;
+    border-radius:50% 
+}
+.container-btn a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #535353
+}
+.main-form{
+    padding: 2em 1.5em;
+    padding-bottom:0; 
+    width:100%;
+    text-align: center;
+    color:#414141;
+    background: rgb(235, 235, 235);
+    border: 1px solid #C1C5C8;
+    border-radius: 5px
+}
+.main-form header{
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size:1.5em;
+}
+.container-p{
+    margin: 1.5em 0em; 
+}
+.container-p a{
+    text-decoration: none;
+    color: rgb(41, 125, 236);
+    font-size:.9em;
+}
+.account-info{
+    width: 100%;
+    border: none;
+}
+.container-info{
+    margin-bottom: 1.2em;
+    text-align: left;
+}
+.container-input,
+.btn-create-account
+{
+    margin: .5em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container-input input{
+    width: 100%;
+    height: 3em;
+    padding: .4em;
+    font-size: 1.1em;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    color:#1c1c1c;
+    font-family: 'Ubuntu';
+    border: 1px solid #C1C5C8;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.container-input input::placeholder{color:#c1c5c8; }
+
+.container-input input[type="number"]{
+    margin-bottom:.5em
+}
+.container-input p{
+    font-size: .8em
+}
+.container-input input[type="password"]{
+    width:91%;
+    border-right: none;
+    border-radius: 5px 0 0 5px
+}
+.container-input span{
+    position: relative;
+    right: 2px;
+    height: 3em;
+    padding: 1.05em .2em;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid #C1C5C8;
+    border-radius: 0px 5px 5px 0;
+    border-left: none;
+    color:#c1c5c8;
+}
+button[name="createAccount"]{
+    width:100%;
+    padding: .8em;
+    color:#f8fcff;
+    font-family: 'Ubuntu';
+    font-size: 1.3em;
+    background:  rgb(41, 125, 236);
+    border:1px solid #002bb9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #002bb9;
+    box-sizing: border-box,
+}
+.account-info-license{
+    width: 80%;
+    margin: 2em auto;
+    font-size: .9em;
+}
+.account-info-license a{
+    text-decoration: none;
+    color: rgb(41, 125, 236)
+}
+.main-form footer{
+    margin-bottom: 1.5em;
+    color:gray;
+    font-style: italic;
+    font-size: .9em;
+}
+.main-form footer a{
+    text-decoration: none;
+    color: rgb(41, 125, 236)
+}
+.footer-end{
+    text-align: center;
+    padding: 2em;
+    color:grey;
+}
+.footer-end ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em
+}
+.footer-end ul li{list-style: none;}
+
+.footer-end ul li a{
+    margin-right:1em;
+    text-decoration: none ;
+    color:grey;
+}
+.footer-end p{
+    margin-bottom: .7em;
+    line-height: 1.5
+}
+@media screen and (min-width:750px){
+    .sing-in{
+        display: flex;
+    }
+    .sing-in-mobile{
+        display: none
+    }
+    .container-input span{
+        padding: 1.02em .2em;
+    }
+}
